@@ -1,0 +1,42 @@
+.station {
+	column-gap: var(--spacing-8);
+}
+
+.stationDescription {
+	flex-basis: 50%;
+
+	@media screen and (max-width: 1024px) {
+		flex-basis: 100%;
+	}
+}
+
+.stationImage {
+	flex-basis: 50%;
+
+	@media screen and (max-width: 1280px) {
+		width: 30%;
+	}
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.button {
+	margin-bottom: var(--spacing-10);
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.prices {
+	column-gap: var(--spacing-8);
+	margin-bottom: var(--spacing-8);
+}
+
+.divider {
+	width: 1px;
+	height: 76px;
+	background-color: var(--base-colors-primary1);
+}

@@ -1,0 +1,12 @@
+.properties {
+	row-gap: var(--spacing-4);
+	margin-bottom: var(--spacing-8);
+}
+
+.dashed {
+	flex-grow: 1;
+	flex-basis: 0;
+	height: 1px;
+	border-top: 1px dashed var(--grey-scale-80);
+	margin: 0 4px -6px;
+}

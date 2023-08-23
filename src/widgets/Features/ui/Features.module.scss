@@ -1,0 +1,32 @@
+.title {
+	margin-bottom: calc(var(--spacing-14) * 2);
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: var(--spacing-8);
+	row-gap: calc(var(--spacing-8) * 2);
+
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		row-gap: var(--spacing-8);
+	}
+}
+
+.item {
+	// column-gap: var(--spacing-14);
+}
+
+.number {
+	font-size: 54px;
+	line-height: 1.2;
+}
+
+.text {
+	width: 85%;
+
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+	}
+}

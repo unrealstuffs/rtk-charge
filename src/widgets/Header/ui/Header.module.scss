@@ -1,0 +1,24 @@
+.Header {
+	padding: var(--spacing-5) 0;
+	margin-bottom: var(--spacing-10);
+}
+
+.phone {
+	column-gap: var(--spacing-2);
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.logos {
+	column-gap: var(--spacing-14);
+
+	@media screen and (max-width: 1024px) {
+		column-gap: var(--spacing-4);
+
+		svg {
+			width: 30%;
+		}
+	}
+}

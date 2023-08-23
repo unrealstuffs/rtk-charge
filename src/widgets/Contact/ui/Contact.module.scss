@@ -1,0 +1,9 @@
+.text {
+	flex-basis: 70%;
+}
+
+.button {
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+	}
+}
