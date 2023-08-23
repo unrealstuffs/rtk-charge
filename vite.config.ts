@@ -16,4 +16,5 @@ export default defineConfig({
 			shared: path.resolve('src/shared'),
 		},
 	},
+	base: '/rtk-charge/',
 })
