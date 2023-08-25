@@ -101,7 +101,7 @@ export const StationPanel = (props: StationPanelProps) => {
 				<Typography variant='h2' spacingBottom='l'>
 					Характеристики
 				</Typography>
-				<Properties parameters={parameters} />
+				<Properties parameters={parameters} max={8} />
 				{Object.keys(parameters).length > 8 && (
 					<FunctionButton color='primary1' onClick={openStationModal}>
 						Все характеристики

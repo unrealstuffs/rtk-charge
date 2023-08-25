@@ -3,8 +3,6 @@ import { Features } from 'widgets/Features'
 import { Stations } from 'widgets/Stations'
 import { features } from '../model/consts/features'
 import { stations } from '../model/consts/stations'
-import { Banner } from 'widgets/Banner'
-import { banner } from '../model/consts/banner'
 
 interface HomePageProps {
 	title: string
@@ -19,7 +17,6 @@ const HomePage = (props: HomePageProps) => {
 
 	return (
 		<>
-			<Banner banner={banner} />
 			<Features items={features} />
 			<Stations stations={stations} />
 		</>

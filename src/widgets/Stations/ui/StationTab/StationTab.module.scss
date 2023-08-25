@@ -1,3 +1,9 @@
 .box {
 	column-gap: var(--spacing-7);
 }
+
+.image {
+	&.mobile {
+		width: 100%;
+	}
+}

@@ -10,7 +10,7 @@ export const stations: StationsType = {
 		{
 			title: 'Зарядная станция Home 7',
 			description:
-				'With a new design approach for flexible use: from a dinner for two to a big celebration.',
+				'Компактная и высокоэффективная зарядная станция - идеальное решение для дома и личного паркинга',
 			fullPrice: '79 000 ₽',
 			creditPrice: '3 500 ₽',
 			fullImage: StandFullImage,
@@ -39,7 +39,7 @@ export const stations: StationsType = {
 		{
 			title: 'Зарядная станция Home 22',
 			description:
-				'An accessory for any occasion, from a nice dinner to an underwater swim',
+				'Компактная и высокоэффективная зарядная станция - идеальное решение для дома и личного паркинга',
 			fullPrice: '120 000 ₽',
 			creditPrice: '5 500 ₽',
 			fullImage: StandFullImage,

@@ -10,7 +10,7 @@ export const stations: StationsType = {
 		{
 			title: 'Зарядная станция Business 33',
 			description:
-				'With a new design approach for flexible use: from a dinner for two to a big celebration.',
+				'Зарядная станция быстрой зарядки, заряжает электромобили мощностью до 150 кВт.',
 			fullPrice: '120 000 ₽',
 			creditPrice: '5 500 ₽',
 			fullImage: BusinessFullImage,
@@ -29,7 +29,7 @@ export const stations: StationsType = {
 		{
 			title: 'Зарядная станция Business 60',
 			description:
-				'An accessory for any occasion, from a nice dinner to an underwater swim',
+				'Зарядная станция быстрой зарядки, заряжает электромобили мощностью до 150 кВт.',
 			fullPrice: '579 000 ₽',
 			creditPrice: '5 500 ₽',
 			fullImage: BusinessFullImage,

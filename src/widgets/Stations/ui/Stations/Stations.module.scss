@@ -1,8 +1,5 @@
-.title {
-	margin-bottom: calc(var(--spacing-14) * 2);
-}
-
 .tabList {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
@@ -14,6 +11,19 @@
 	@media screen and (max-width: 1024px) {
 		flex-direction: column;
 	}
+
+	.icon {
+		position: absolute;
+		top: 50%;
+		background-color: var(--transparent-10);
+
+		&.left {
+			left: 0;
+		}
+		&.right {
+			right: 0;
+		}
+	}
 }
 
 .tab {
@@ -21,6 +31,20 @@
 	border-radius: var(--border-radius);
 	cursor: pointer;
 	flex-basis: 50%;
+	transition: border-color 0.3s ease;
+
+	&:hover {
+		border-color: var(--base-colors-primary1);
+	}
+
+	&.mobile {
+		border: none;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
 }
 
 .active {

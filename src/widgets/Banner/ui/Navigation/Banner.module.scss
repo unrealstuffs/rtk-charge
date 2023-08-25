@@ -1,33 +1,44 @@
-.Banner {
-	// position: relative;
-}
-
-.imageContainer {
+.container {
 	position: relative;
+	background-color: var(--grey-scale-80);
+	border-radius: 8px;
 }
 
 .image {
 	width: 100%;
-	max-width: 100%;
+	margin-bottom: -5px;
+	height: 600px;
+	object-fit: cover;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+
+	@media screen and (max-width: 1024px) {
+		height: auto;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
 }
 
 .text {
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 80px);
 	left: 40%;
 	transform: translate(-50%, -50%);
 }
 
 .navigation {
-	position: relative;
+	position: absolute;
 	background-color: var(--grey-scale-90);
 	border-radius: var(--border-radius);
-	width: 95%;
-	margin: -5% auto 0;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 2px;
-
+	z-index: 2;
+	bottom: -100px;
+	left: 2.5%;
+	right: 2.5%;
 	@media screen and (max-width: 1024px) {
 		display: none;
 	}
@@ -37,32 +48,12 @@
 	background-color: var(--grey-scale-black);
 }
 
-.fadeIn {
-	animation: 0.5s fadeIn forwards;
-}
+.mobileItem {
+	background-color: var(--grey-scale-80);
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 
-.fadeOut {
-	animation: 0.5s fadeOut forwards;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate(-20px, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate(0px, 0px);
-	}
-}
-
-@keyframes fadeOut {
-	from {
-		opacity: 1;
-		transform: translate(0px, 0px);
-	}
-	to {
-		transform: translate(-20px, 0);
-		opacity: 0;
+	.icon {
+		background-color: var(--transparent-10);
 	}
 }

@@ -10,13 +10,12 @@ const NavbarItem = (props: NavbarItemType) => {
 		<NavLink
 			to={path}
 			className={({ isActive }) =>
-				classNames(cls.NavbarItem, { [cls.active]: isActive }, [])
+				classNames(cls.NavbarItem, { [cls.active]: isActive }, [
+					rounded && cls[rounded],
+				])
 			}
 		>
-			<Box
-				className={classNames(cls.item, {}, [rounded && cls[rounded]])}
-				spacing='l'
-			>
+			<Box spacing='l'>
 				<Typography
 					variant='h2'
 					spacingBottom='xs'

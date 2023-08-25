@@ -15,12 +15,11 @@
 }
 
 .item {
-	// column-gap: var(--spacing-14);
-}
-
-.number {
-	font-size: 54px;
-	line-height: 1.2;
+	.number {
+		font-size: 54px;
+		line-height: 1.2;
+		font-weight: 500;
+	}
 }
 
 .text {

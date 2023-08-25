@@ -1,6 +1,10 @@
 .Header {
 	padding: var(--spacing-5) 0;
 	margin-bottom: var(--spacing-10);
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: var(--spacing-5);
+	}
 }
 
 .phone {

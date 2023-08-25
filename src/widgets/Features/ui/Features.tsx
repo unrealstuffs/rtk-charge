@@ -18,11 +18,12 @@ export const Features = (props: FeaturesProps) => {
 					<Typography
 						variant={matches ? 'mega' : 'h1'}
 						spacingBottom='l'
+						spacingTop='xl'
 					>
 						Charge — сеть зарядных станций для электромобилей
 					</Typography>
 					<Typography
-						variant={matches ? 'accentL' : 'accentM'}
+						variant={matches ? 'accentL' : 'bodyL'}
 						spacingBottom='xxxl'
 					>
 						Создаём зарядную инфраструктуру мощностью от 22 до 300

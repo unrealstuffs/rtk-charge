@@ -4,17 +4,18 @@ import { Typography, useThemeContext } from '@design-system-rt/rtk-ui-kit'
 
 interface ParametersProps {
 	parameters: { [key: string]: string }
+	max?: number
 }
 
 export const Properties = (props: ParametersProps) => {
-	const { parameters } = props
+	const { parameters, max = -1 } = props
 	const { themeConfig } = useThemeContext()
 
 	return (
 		<VStack className={cls.properties}>
 			{parameters &&
 				Object.entries(parameters)
-					.slice(0, 8)
+					.slice(0, max)
 					.map(([key, value]) => (
 						<HStack justify='between' max key={key}>
 							<Typography

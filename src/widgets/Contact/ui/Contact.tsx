@@ -33,7 +33,10 @@ export const Contact = () => {
 						gap='32'
 					>
 						<VStack className={cls.text}>
-							<Typography variant='mega' spacingBottom='l'>
+							<Typography
+								variant={matches ? 'mega' : 'h1'}
+								spacingBottom='l'
+							>
 								Решаем задачи клиентов
 							</Typography>
 							<Typography variant={matches ? 'accentL' : 'bodyL'}>
